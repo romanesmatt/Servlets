@@ -11,6 +11,6 @@
     <servlet-mapping>
         <servlet-name>UserAgentDetectorServlet</servlet-name>
         <url-pattern>/whatsyourbrowser</url-pattern>
-    </servlet-mapping>r
+    </servlet-mapping>
 
 </web-app>

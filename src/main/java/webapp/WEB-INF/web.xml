@@ -5,11 +5,11 @@
    http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 
     <servlet>
-        <servlet-name>UserAgentDetectorServlet</servlet-name>
-        <servlet-class>nz.ac.wgtn.swen301.tuts.jee101.servlets.UserAgentDetectorServlet</servlet-class>
+        <servlet-name>UserAgentServlet</servlet-name>
+        <servlet-class>nz.ac.wgtn.swen301.tuts.jee101.UserAgentDetectorServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>UserAgentDetectorServlet</servlet-name>
+        <servlet-name>UserAgentServlet</servlet-name>
         <url-pattern>/whatsyourbrowser</url-pattern>
     </servlet-mapping>
 

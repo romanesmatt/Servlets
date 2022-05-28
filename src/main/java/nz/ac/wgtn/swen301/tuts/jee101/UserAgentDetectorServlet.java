@@ -35,6 +35,9 @@ public class UserAgentDetectorServlet extends HttpServlet{
         }
         //For running on Mac
         //Checking if the browser is Safari
+        else if(userAgentHeader.contains("Chrome")){
+            browser = "Safari";
+        }
 
 
 //        Checking if the browser is Chrome

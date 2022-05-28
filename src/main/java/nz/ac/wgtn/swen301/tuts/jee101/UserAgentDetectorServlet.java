@@ -23,12 +23,28 @@ public class UserAgentDetectorServlet extends HttpServlet{
 
         String userAgentHeader = req.getHeader("User-Agent");
 
+        String browser = "unknown";
+
+//        Checking if the browser is Firefox
+        if(userAgentHeader.contains("Firefox")){
+            browser = "Mozilla Firefox";
+        }
+//        Checking if the browser is Chrome
+        else if(userAgentHeader.contains("Chrome")){
+            browser = "Google Chrome";
+        }
+        //For running on Mac
+        //Checking if the browser is Safari
+
+
+//        Checking if the browser is Chrome
+
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html");
 
         out.println("<html>");
         out.println("<body>");
-        out.println("Hello World!");
+        out.println("The user agent string is <strong>" + browser + "</strong");
         out.println("</body>");
         out.println("</html>");
     }

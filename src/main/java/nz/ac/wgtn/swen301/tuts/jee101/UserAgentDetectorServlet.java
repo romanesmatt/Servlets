@@ -21,7 +21,7 @@ public class UserAgentDetectorServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String userAgentHeader = req.getHeader("");
+        String userAgentHeader = req.getHeader("User-Agent");
 
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html");

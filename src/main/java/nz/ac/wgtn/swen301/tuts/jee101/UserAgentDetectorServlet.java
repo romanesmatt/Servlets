@@ -39,9 +39,6 @@ public class UserAgentDetectorServlet extends HttpServlet{
             browser = "Safari";
         }
 
-
-//        Checking if the browser is Chrome
-
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html");
 
